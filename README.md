@@ -10,11 +10,11 @@ Download and build [SDL3](https://github.com/libsdl-org/SDL) which we will be us
 
 ```
 # Builds and installs Debug libraries
-cmake -S . -B build/debug -G "Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_BUILD_TYPE=Debug
+cmake -S . -B build/debug -G "Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX="./install" -DCMAKE_BUILD_TYPE=Debug
 cmake --build build/debug --target install --config Debug
 
 # Builds and installs Release libraries
-cmake -S . -B build/release -G "Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_BUILD_TYPE=Release
+cmake -S . -B build/release -G "Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX="./install" -DCMAKE_BUILD_TYPE=Release
 cmake --build build/release --target install --config Release
 ```
 
